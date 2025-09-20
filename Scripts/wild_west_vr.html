@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/project_details.css">
+</head>
+
+<body>
+    <header>     
+            <nav> 
+                <ul class="sidebar">
+                    <li onclick=CloseSidebar()><a href="#" id="close-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f5f5f5"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul>
+                    <li class="menu-button" onclick=ShowSidebar()><a href="#" id="hamburger-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f5f5f5"><path d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z"/></svg></a></li>  
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+                    <li class="hideOnMobile"><a href="contact.html">Contact</a></li>            
+                </ul>
+            </nav>         
+    </header>
+
+    <div class="main-container projects">
+        <section class="intro">
+          <h1>Guns & Barrels VR</h1>
+        </section>
+      
+        <div class="project-details container">
+            
+            <div class="back-wrapper">
+                <a href="projects.html" class="back-button">
+                  <img src="Icons/return.svg" alt="Back Arrow" class="back-icon">
+                  Back to Projects
+                </a>
+              </div>
+              
+      
+        
+          <div class="project-section">
+            <h3>Overview</h3>
+            <p class="describing-text">
+              Guns & Barrels VR is a high-performance 3D demo, optimized for 90 FPS on Meta Quest 3. Players experience an immersive 
+              western town in VR with their own avatar, interactive tutorial, scalable level system and permanently saveable progress. 
+              I developed the full experience independently, creating core systems and gameplay logic myself, while customizing and 
+              integrating some external models for optimal performance and visual consistency.
+            </p>
+          </div>
+      
+       
+           <div class="project-section">
+            <h3>Gameplay Demo</h3>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/watch?v=wkUx2l6AKgc" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+        
+          <div class="project-section">
+            <h3>Screenshots</h3>
+            <div class="screenshots">
+              <img src="Images/Screenshot_Level.png" alt="Screenshot 1">
+              <img src="Images/Screenshot_MainMenu.png" alt="Screenshot 2">
+              <img src="Images/Screenshot_Town.png" alt="Screenshot 3">
+            </div>
+          </div>
+      
+        
+          <div class="project-section">
+            <h3>Features</h3>
+            <ul class="features">
+              <li>Scalable level system (via ScriptableObjects)</li>
+              <li>Multilingual support (4 languages)</li>
+              <li>Persistent save system (highscores, player stats)</li>
+              <li>Performance optimized for Meta Quest 3</li>
+              <li>Custom 3D assets (Blender + Substance Painter)</li>
+              <li>Interactive dialogue & tutorial system</li>
+              <li>Stylized environment design</li>
+            </ul>
+          </div>
+      
+        
+           
+            <div class="project-section">
+                <h3>Download & More</h3>
+                <p class="download-description">
+                  Try the game now or check out the code on GitHub!
+                </p>
+              
+                <div class="buttons">
+                  <a href="https://stevdev89.itch.io/gunsnbarrelsvr" target="_blank">
+                    <img src="Icons/itchio.svg" alt="Itch.io" class="btn-icon">
+                    Download on itch.io
+                  </a>
+                  <a href="https://github.com/SteveDevUnity/guns-and-barrels-vr.git" class="github" target="_blank">
+                    <img src="Icons/github-svg.svg" alt="GitHub" class="btn-icon">
+                    View Code on GitHub
+                  </a>
+                </div>
+              </div>
+              
+              
+
+         
+        <div class="project-section">
+            <h3>Made with</h3>
+            <div class="tech-icons">
+              <img src="Images/U_Logo_Small_Black_RGB_1C 1.png" alt="Unity">
+              <img src="Images/blender_logo.png" alt="Blender">
+              <img src="Images/Adobe_Substance_3D_Painter_icon.png" alt="Substance Painter">
+            </div>
+          </div>
+
+        </div>
+      
+
+        <footer>
+          <li><a href="contact.html#impressum" id="impressum-link">Impressum</a></li>
+          <p>© 2024 Stefan Risse.</p>
+        </footer>
+      </div>
+          
+
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const lightbox = document.getElementById("lightbox");
+          const lightboxImg = lightbox.querySelector("img");
+      
+         
+          document.querySelectorAll(".screenshots img").forEach(img => {
+            img.addEventListener("click", () => {
+              lightboxImg.src = img.src;
+              lightbox.classList.add("show");
+            });
+          });
+      
+          
+          lightbox.addEventListener("click", () => {
+            closeLightbox();
+          });
+      
+        
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && lightbox.classList.contains("show")) {
+              closeLightbox();
+            }
+          });
+      
+          function closeLightbox() {
+            lightbox.classList.remove("show");
+            lightboxImg.src = "";
+          }
+        });
+      </script>
+      
+      
+    
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Expanded Screenshot">
+      </div>
+</body>
+</html>
+
+
